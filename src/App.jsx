@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import styles from "./index.css"
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -16,17 +17,17 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h1 className="text-5xl font-bold underline">
+        Hello world!
+      </h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
