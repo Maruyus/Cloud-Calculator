@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Toolbar from './components/Toolbar'
 import styles from "./index.css"
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -9,6 +10,9 @@ function App() {
   return (
     <div className="App">
       <div>
+        <Toolbar />
+      </div>
+      <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -18,8 +22,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <h1 className="text-5xl font-bold underline">
-        Hello world!
+        Hello orld!
       </h1>
+      
+      {/* ReactDOM.render(<Welcome />, document.getElementById('Welcome')); */}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
