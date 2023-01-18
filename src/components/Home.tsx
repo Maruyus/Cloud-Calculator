@@ -1,16 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '../App';
+import { Dropdown } from 'primereact/dropdown';
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div className="">
-                <h1>Home page goes here</h1>
-            </div>
-        )
+const Home = () => {
+    const locations = [
+        {label: 'Europe East', value: 'EUE'},
+        {label: 'Europe West', value: 'EUW'},
+        {label: 'Europe North', value: 'EUN'},
+        {label: 'US East', value: 'USE'},
+        {label: 'US West', value: 'USW'},
+        {label: 'US Central', value: 'USC'},
+        {label: 'Asia', value: 'ASI'},
+        {label: 'Africa', value: 'AFR'}
+    ]
+    let location = 'US West';
+
+    function setCity(value) {
+        location = value;
     }
+
+    return (
+        <div className="">
+
+            
+            <Dropdown value={location} options={locations} onChange={(e) => setCity(e.value)} placeholder="Select a City"/>
+ 
+ 
+        </div>
+    )
 }
 
 export default Home;

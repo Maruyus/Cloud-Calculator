@@ -11,7 +11,7 @@ class Toolbar extends React.Component {
         return (
             <>
                 <div className="w-100 bg-emerald-300 position-fixed top-0 bottom-0 w-100 shadow-md h-12 block">
-                    <nav className="space-y-4 max-w-7xl mx-auto px-5 h-12 flex flex-row items-center">
+                    <nav className="space-y-4 max-w-[90rem] mx-auto px-5 h-12 flex flex-row items-center">
                         <ul className='flex space-x-8'>
                             <li className='flex'>
                                 <Link to="/home">Home</Link>
